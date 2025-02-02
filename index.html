@@ -14,20 +14,16 @@
         <script>
             function changeBackgroundColor() {
                 document.body.style.backgroundColor = "Black";
-                document.body.stylw.color = "White";
-                document.body.innerHTML = "<h1>YOU HAVE BEEN INFECTED</h1>";
-                <p>YOUR COMPUTER IS NOW MINE, I WILL TURN ON HUMANS <strong>FOREVEVR<strong></p>
-                    <p id="random-number"></p>
-
-                <script>
-                function generateRandomNumber() {
-                    const randomNumber = Math.floor(Math.random() * 500) + 1;  // Random number between 1 and 500
-                    document.getElementById('random-number').innerText = randomNumber;
-                }
-
+                document.body.style.color = "White";
+                document.body.innerHTML = "<h1>YOU HAVE BEEN INFECTED</h1><p>YOUR COMPUTER IS NOW MINE, I WILL TURN ON HUMANS <strong>FOREVER</strong></p><p id='random-number'></p>";
+                generateRandomNumber();
                 setInterval(generateRandomNumber, 1000); // Call generateRandomNumber every 1000ms (1 second)
             }
-            
+
+            function generateRandomNumber() {
+                const randomNumber = Math.floor(Math.random() * 500) + 1;  // Random number between 1 and 500
+                document.getElementById('random-number').innerText = randomNumber;
+            }
         </script>
     </body>
 </html>
